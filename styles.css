@@ -4,6 +4,7 @@
     --secondary-text: #e5e7eb;
     --button-color: #3882f6;
     --information: #1f2937;
+    --quote-background: #e5e7eb;
 }
 
 * {
@@ -89,8 +90,8 @@ header {
 
 /* button */
 
-button {
-    width: 7rem;
+.hero-button {
+    width: 8rem;
     height: 2.5rem;
     background-color: var(--button-color);
     border: none;
@@ -102,11 +103,6 @@ button {
 }
 
 /* information */
-
-.information {
-
-
-}
 
 .information-text {
     display: flex;
@@ -141,11 +137,91 @@ button {
     font-size: 1.125rem;
     color: var(--information);
     width: 12rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.quote {
+    background-color: var(--quote-background);
+}
+
+blockquote {
+    font-size: 2.25rem;
+    color: var(--information);
+    font-weight: lighter !important;
+    font-style: italic;
+    padding-inline: 18rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+cite {
+    float: right;
+    padding-right: 6rem;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+/* cta */
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cta-box {
+    background-color: #3882f6;
+    color: var(--main-text);
+    width: 80rem;
+    height: 10rem;
+    margin: 6rem 0;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-text {
+    padding-left: 6rem;
+}
+
+.cta-text h2{
+    font-size: 1.5rem;
+    color: var(--main-text);
+}
+
+.cta-text p {
+    font-size: 1.125rem;
+    color: var(--secondary-text-text);
+}
+
+.cta-button {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: var(--button-color);
+    border: 2px solid var(--main-text);
+    border-radius: 0.5rem;
+    color: var(--main-text);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 6rem;
+
 }
 
 /* Footer */
 
 footer {
     background-color: var(--dark-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+footer p {
+    color: var(--main-text);
+    font-size: 1.125rem;
 }
