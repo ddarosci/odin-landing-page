@@ -1,0 +1,151 @@
+:root {
+    --dark-background: #1f2937;
+    --main-text: #f9faf8;
+    --secondary-text: #e5e7eb;
+    --button-color: #3882f6;
+    --information: #1f2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Nav bar */
+
+nav {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    color: var(--main-text);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.125rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-text);}
+
+
+
+/* Hero section */
+
+header {
+    background-color: var(--dark-background);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    height: 50vh;
+}
+
+.hero-text .main-text {
+    font-size: 3rem;
+    color: var(--main-text);
+    font-weight: 900;
+    width: 50%;
+}
+
+.hero-text .secondary-text {
+    font-size: 1.125rem;
+    color: var(--secondary-text);
+    width: 50%;
+}
+
+.hero-image {
+    width: 50%;
+    height: 50%;
+    background-color: #333;
+    color: var(--secondary-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button */
+
+button {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--main-text);
+    margin-top: 1rem; 
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* information */
+
+.information {
+
+
+}
+
+.information-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-text h2 {
+    font-size: 2.25rem;
+    color: var(--information);
+    font-weight: 900;
+    margin: 2.4rem;
+}
+
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12rem;
+    gap: 10rem;
+}
+
+.blue-box {
+    width: 12em;
+    height: 12rem;
+    border: 5px solid var(--button-color);
+    border-radius: 1rem;
+}
+
+.box p {
+    font-size: 1.125rem;
+    color: var(--information);
+    width: 12rem;
+    margin-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-background);
+}
